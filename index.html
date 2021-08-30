@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>ACCESS Times</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+    crossorigin="anonymous" />
 </head>
 
 <body>
-  <div class ="container-fluid">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col" style="max-width: 200px;">
+      <div class="col" style="max-width: 200px">
         <label for="selectTimeZone" class="form-label">Local time zone</label>
-        <select class="form-select form-select-sm" aria-label=".form-select-lg example" id="selectTimeZone">
+        <select class="form-select form-select-sm"
+          aria-label=".form-select-lg example" id="selectTimeZone">
           <option selected value="1">Eastern</option>
           <option value="2">Central</option>
           <option value="3">Central Western</option>
@@ -20,24 +25,34 @@
         </select>
       </div>
     </div>
+
     <div class="row">
       <div class="col">
-<table class="table"> 
-<thead>
-  <tr>
-    <th scope="col">Local Time</th>
-    <th scope="col">UTC Time</th> 
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <th scope="row">10:00</th>
-    <td>00:00</td>
-  </tr>
-</tbody>
-</table>
-
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Local Time</th>
+              <th scope="col">UTC Time</th>
+            </tr>
+          </thead>
+          <tbody id = "timeTable">
+            <tr>
+              <td scope="row">10:00</th>
+              <td>00:00</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js" integrity="sha512-frUCURIeB0OKMPgmDEwT3rC4NH2a4gn06N3Iw6T1z0WfrQZd7gNfJFbHrNsZP38PVXOp6nUiFtBqVvmCj+ARhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
+
+</html>
