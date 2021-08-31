@@ -16,30 +16,35 @@
     <div class="row">
       <div class="col" style="max-width: 200px">
         <label for="selectTimeZone" class="form-label">Local time zone</label>
-        <select class="form-select form-select-sm"
-          aria-label=".form-select-lg example" id="selectTimeZone">
-          <option selected value="1">Australia/Melbourne</option>
-          <option value="2">Australia/Sydney</option>
-          <option value="3">Australia/Brisbane</option>
-          <option value="4">Australia/Adelaide</option>
-          <option value="5">Australia/Darwin</option>          
-          <option value="6">Australia/Eucla</option>
-          <option value="7">Australia/Perth</option>
+        <select class="form-select" aria-label=".form-select-lg example"
+          id="selectTimeZone">
+          <option selected value="4">Australia/Melbourne</option>
+          <option value="5">Australia/Sydney</option>
+          <option value="7">Australia/Brisbane</option>
+          <option value="9">Australia/Adelaide</option>
+          <option value="11">Australia/Perth</option>
+          <option value="10">Australia/Darwin</option>
+          <option value="3">Australia/Hobart</option>
+          <option value="1">Australia/Lord_Howe</option>
+          <option value="2">Antarctica/Macquarie</option>
+          <option value="6">Australia/Broken_Hill</option>
+          <option value="8">Australia/Lindeman</option>
+          <option value="12">Australia/Eucla</option>
         </select>
       </div>
     </div>
 
     <div class="row">
-      
+
       <div class="col" style="max-width: 100px">
         <table class="table table-hover table-sm">
           <thead>
             <tr>
-              <th scope="col" >Local dd/HH</th>
-              <th scope="col">UTC dd/HH</th>
+              <th scope="col">Local dd/HH:MM</th>
+              <th scope="col">UTC dd/HH:MM</th>
             </tr>
           </thead>
-          
+
           <tbody id="timeTable">
             <tr>
               <td scope="row">10:00</th>
@@ -49,7 +54,7 @@
         </table>
       </div>
 
-      
+
     </div>
 
   </div>

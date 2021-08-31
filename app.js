@@ -17,20 +17,26 @@ function makeTable() {
     let rowTimeUTC = startTimeUtc.plus({ hours: i });
     let row = tbody.append("tr");
     let cell = row.append("td");
-    cell.text(rowTime.setLocale('en-AU').toFormat('dd/HH'));
+    cell.text(rowTime.setLocale('en-AU').toFormat('dd/HH:mm'));
     let cellUTC = row.append("td");
-    cellUTC.text(rowTimeUTC.setLocale('en-AU').toFormat('dd/HH'));
+    cellUTC.text(rowTimeUTC.setLocale('en-AU').toFormat('dd/HH:mm'));
   }
 };
 
-var zoneId = 1;
-var timeZones = ["Australia/Melbourne",
+var zoneId = 4;
+var timeZones = [
+  "Australia/Lord_Howe",
+  "Antarctica/Macquarie",
+  "Australia/Hobart",
+  "Australia/Melbourne",
   "Australia/Sydney",
+  "Australia/Broken_Hill",
   "Australia/Brisbane",
+  "Australia/Lindeman",
   "Australia/Adelaide",
   "Australia/Darwin",
-  "Australia/Eucla",
-  "Australia/Perth"
+  "Australia/Perth",
+  "Australia/Eucla"
 ];
 var timeZone = timeZones[zoneId-1];
 
